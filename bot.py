@@ -1,6 +1,6 @@
 import discord
 from discord.ext import commands
-TOKEN = 'NzA4NTA1MDkzNTU2OTI4NTUy.XrYU-A.DDh3sk9eRaKJXBirrvcGmN7uous'
+TOKEN = ''
 bot = commands.Bot(command_prefix= '.')
 
 startup_extensions = ["roles"]

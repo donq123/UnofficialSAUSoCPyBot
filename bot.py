@@ -15,7 +15,7 @@ async def role(ctx, role: discord.Role):
     print(role.color)
     if role.color == discord.Color.default():
         await user.add_roles(role)
-        await ctx.send(f"{user} has been giving a role called: {role.name}")
+        await ctx.send(f"{user} has been given a role called: {role.name}")
     else:
         await ctx.send("That is not a permitted role")
 
@@ -23,7 +23,7 @@ async def role(ctx, role: discord.Role):
 async def giverole(ctx, user: discord.Member, role: discord.Role):
     if (ctx.author.role.name == "Administrator"):
         await user.add_roles(role)
-        await ctx.send(f"{ctx.author.name}, {user.name} has been giving a role called: {role.name}")
+        await ctx.send(f"{ctx.author.name}, {user.name} has been given a role called: {role.name}")
     else:
         await ctx.send("You are not admin and cannot give roles to people")
 
